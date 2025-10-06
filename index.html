@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TURBO: Open Day — Beginner Spanish (Present)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><span class="turbo">TURBO</span>: Open Day — Beginner Spanish (Present)</h1>
+
+    <div id="top-bar">
+      <button id="audioTest" title="Play a short test">🔊 Test voice</button>
+      <span id="msg" aria-live="polite"></span>
+    </div>
+
+    <div id="menu">
+      <button id="startDemo" class="mode-btn">Start Demo</button>
+    </div>
+
+    <div id="game" style="display:none;">
+      <div id="timer" aria-live="polite">Time: 0s</div>
+
+      <div id="voice-bar" class="voice-bar" style="display:none;">
+        <button id="read-all">🔊 Read all</button>
+        <label class="auto-read">
+          <input type="checkbox" id="auto-read" />
+          Auto‑read on focus
+        </label>
+      </div>
+
+      <div id="questions"></div>
+      <div class="controls">
+        <button id="submit">Finish & Check</button>
+        <button id="back-button" style="display:none;">Back to Menu</button>
+      </div>
+      <div id="results" aria-live="polite"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
