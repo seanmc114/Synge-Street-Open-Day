@@ -3,21 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TURBO: Open Day — Beginner Spanish (Present)</title>
+  <title>TURBO: MTW Sample (Ser/Tener/Estar)</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1><span class="turbo">TURBO</span>: Open Day — Beginner Spanish (Present)</h1>
+    <h1><span class="turbo">TURBO</span>: MTW Sample (Ser/Tener/Estar)</h1>
 
-    <div id="top-bar">
-      <button id="audioTest" title="Play a short test">🔊 Test voice</button>
-      <span id="msg" aria-live="polite"></span>
+    <div id="tense-buttons" role="toolbar" aria-label="Tense selection">
+      <button class="tense-button active" data-tense="Present">Present</button>
+      <button class="tense-button" data-tense="Past">Past</button>
+      <button class="tense-button" data-tense="Future">Future</button>
     </div>
 
-    <div id="menu">
-      <button id="startDemo" class="mode-btn">Start Demo</button>
+    <div id="unlock-bar">
+      <input id="codeInput" placeholder="Enter teacher code" />
+      <button id="codeBtn">Unlock</button>
+      <span id="codeMsg" aria-live="polite"></span>
     </div>
+
+    <div id="mode-list" class="modes"></div>
 
     <div id="game" style="display:none;">
       <div id="timer" aria-live="polite">Time: 0s</div>
